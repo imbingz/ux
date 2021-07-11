@@ -38,9 +38,9 @@ a {
 	color: #999999;
 }
 
-a:hover {
+/* a:hover {
 	color: #ff7d04;
-}
+} */
 
 button {
 	display: inline-block;
@@ -56,20 +56,96 @@ small {
 	font-size: small;
 }
 
-/* #bing {
-	font-family: 'Major Mono Display', monospace; */
-/* color: #2b5fbb; */
-/* color: #0592ff; */
-/* color: #046ffe; */
-/* color: #a1a1a1;
-}  */
+#bing {
+	/* font-family: 'Major Mono Display', monospace; */
+	/* color: #2b5fbb; */
+	/* color: #0592ff; */
+	color: #046ffe;
+}
 
 /* Header */
 .navbar {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	padding: 0.5rem 3%;
+	padding: .5rem 1.5rem;
+}
+
+/* nav-links */
+.nav-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links li a {
+	text-decoration: none;
+	padding: .8rem 1.2rem;
+	/* add some extra padding */
+	display: block;
+}
+
+.nav-links li a:hover {
+	background-color: rgb(240, 240, 240);
+	color: #de0003;
+	border-radius: 50px;
+}
+
+/* hanburger menu bars */
+.toggle-button {
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	display: none;
+	/* display: flex; */
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: #777;
+	border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.toggle-button {
+		display: flex;
+	}
+
+	.nav-links {
+		display: none;
+		width: 100%;
+	}
+
+	.nav-links ul {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.nav-links ul li {
+		text-align: center;
+	}
+
+	.nav-links ul li a {
+		padding: 0.5 1rem;
+	}
+
+	.nav-links.active {
+		display: flex;
+	}
 }
 
 h1.title {
@@ -85,10 +161,10 @@ h2.subtitle {
 	color: #999999;
 }
 
-.headernav {
+/* .headernav {
 	display: flex;
 	justify-content: space-around;
-}
+} */
 
 /* About me section */
 .section-about {
@@ -99,6 +175,7 @@ h2.subtitle {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	/* flex: 1 1 auto; */
 }
 
 .title-wrapper {
@@ -147,11 +224,11 @@ h2.subtitle {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url("./images/1.png");
+	background-image: url("./images/bg-02.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	/* background-attachment: fixed; */
-	background-position: center top;
+	background-attachment: fixed;
+	background-position: center;
 	padding: 20%;
 }
 
