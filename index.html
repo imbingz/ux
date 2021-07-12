@@ -15,10 +15,10 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" id="nav">
     <!-- logo or brand name -->
-    <a href="#" class="brand-logo"> 
-      <img src="./assets/images/bing-logo-3.png" alt="logo" height="75px">
+    <a href="#about" class="brand-logo"> 
+      <img src="./assets/images/logo-blue.png" alt="logo" height="48px">
     </a>
     <!-- handburger menu  -->
     <a href="#" class="toggle-button">
@@ -29,22 +29,48 @@
     <!-- nav-links -->
     <div class="nav-links">
       <ul>       
-         <li><a href="index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li class="nav-social-icons">
+            <a
+            href="https://www.linkedin.com/in/bingzhang1/"
+            target="_blank"
+            aria-hidden="true"
+            class="fa fa-linkedin nav-icon">
+            </a>
+            <a
+            href="https://github.com/imbingz"
+            target="_blank"
+            aria-hidden="true"
+            class="fa fa-github nav-icon">
+            </a>
+            <a
+            href="https://www.instagram.com/imbingz/?hl=en"
+            target="_blank"
+            aria-hidden="true"
+            class="fa fa-instagram nav-icon">
+            </a>
+            <a
+            href="mailto:contact.bingz@gmail.com"
+            target="_top"
+            class="fa fa-envelope nav-icon" 
+            aria-hidden="true">
+            </a>
+          </li>  
       </ul>
     </div>
   </nav>
   </header>
   <main>
     <!-- about me -->
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="section-about-title">
         <div class="title-wrapper">
           <h1 class="title">Hello, My name is <span id="bing">BING</span></h1>
-          <h2 class="subtitle">A UXUI Designer Who Loves Coding</h2>
+          <h2 class="subtitle">I love design, business and coding</h2>
         </div> 
-        <div class="btn-resume"><a href="#intro"><button class="btn-about">More About Me</button> </a></div>
+      <a href="#intro" class="btn btn-about">More About Me</a>
           
       </div class="section-about-img">
       <!-- <div> -->
@@ -54,37 +80,40 @@
     <section class="section-intro" id="intro">
       <div>
         <p>At my core I am a problem solver, a collaborator and an entrepreneur. I believe that there is nothing impossible when I set my mind to it.</p>
-        <p>Having lived in multiple countries (China, U.K. and U.S.) and having experience with both the business and engineering world, I am able to work effectively with people from diverse backgrounds.</p>
+        <p>Having lived in multiple countries and having experience with, product design, business and engineering world, I am able to work effectively with people from diverse backgrounds.</p>
         <p>I enjoy working with and love to learn from great people who want to help others and improve the world. So if that's you, reach out and say <span style="color: #BD2640; font-size: 28px;padding-left: .1em;">H</span><span style="color: #046FFE; font-size: 28px;">i</span></p>
       </div>
+      <a href="#projects" class="btn btn-projects">View Projects</a>
     </section>
      <!-- project -->
-    <section class="section-projects">
+    <section class="section-projects" id="projects">
      <div calss="project-card">
        <div class="project-image">
-         <img src="./assets/images/gov-redesign.png" alt="portfolio cover photo">
+         <img src="./assets/images/p4.png" alt="portfolio cover photo">
        </div>
        <h6 class="project-card-title">A Government Website Redesign</h6>
-       <div><button class="project-card-btn">Learn More</button></div>
+      <p class="project-card-text">Project discription</p>
+       <a href="#" class="btn project-card-btn">Learn More</a>
      </div>
      <div calss="project-card">
        <div class="project-image">
-         <img src="./assets/images/feather.png" alt="portfolio cover photo">
+         <img src="./assets/images/p6.png" alt="portfolio cover photo">
        </div>
-       <h6 class="project-card-title">A Self-Care App Named Feather </h6>
-       
-       <div><button class="project-card-btn">Learn More</button></div>
-     </div>
+       <h6 class="project-card-title">A Self-Care App - Feather </h6>
+       <p class="project-card-text">Project discription</p>
+      <a href="#" class="project-card-btn btn">Learn More</a>
+    </div>
      <div calss="project-card">
        <div class="project-image">
-         <img src="./assets/images/ngo-redesign.png" alt="portfolio cover photo">
+         <img src="./assets/images/p5.png" alt="portfolio cover photo">
        </div>
        <h6 class="project-card-title">A Non-Project Website Redesign</h6>
-       <div><button class="project-card-btn">Learn More</button></div>
+       <p class="project-card-text">Project discription</p>
+      <a href="#" class="btn project-card-btn">Learn More</a>
      </div>
     </section>
     <!-- skills -->
-    <section class="section-skills">
+    <section class="section-skills" id="skills">
       <div class="section-skills-wrapper">
         <div class="skill-wrapper">
           <h6>UX Skills</h6>
@@ -118,36 +147,27 @@
         </div>
       </div>
     </section>
-  </main>
-  <!-- footer here -->
-  <footer >
-    <div class="footernav">
-      <p><small>All rights reserved &copy; 2021  |  Bing Zhang</small></p>
-      <p><small><a class="text-muted email" href="mailto:contact.bingz@gmail.com">Email: contact.bingz@gmail.com</a></small></p>
-      <ul class="footerlist">
-        <li>
-          <a
-          href="https://www.linkedin.com/in/bingzhang1/"
-          target="_blank"
-          class="fa fa-linkedin nav-icon">
-          </a>
-        </li>
-        <li>
-          <a
-          href="https://github.com/imbingz"
-          target="_blank"
-          class="fa fa-github nav-icon">
-          </a>
-        </li>
-        <li>
-          <a
-          href="https://www.instagram.com/imbingz/?hl=en"
-          target="_blank"
-          class="fa fa-instagram nav-icon">
-          </a>
-        </li>
-      </ul>
+    <section class="section-contact">
+      <h3> Connect with me for collaberation or questions </h3>
+      <div class="share-box">
+        <a href="https://www.linkedin.com/in/bingzhang1/" target="_blank">
+          <i daria-hidden="true" class="fa fa-linkedin nav-icon"></i>
+        </a>
+        <a href="https://github.com/imbingz" target="_blank">
+          <i aria-hidden="true" class="fa fa-github nav-icon"></i>
+        </a>
+        <a href="https://www.instagram.com/imbingz/?hl=en" target="_blank"> 
+          <i class="fa fa-instagram nav-icon" aria-hidden="true"></i>
+        </a>
+        <a  href="mailto:contact.bingz@gmail.com" target="_top">
+          <i class="fa fa-envelope nav-icon"aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+    <div class="back-btn-wrapper">
+      <a href="#nav" class="gotopbtn"><i class="fa fa-arrow-circle-up red-color" style="font-size:48px; color:#000; opacity: 0.3; display: block;"></i>Back to top</i></a>
     </div>
-  </footer>
+  </main>
+   
 </body>
 </html>
