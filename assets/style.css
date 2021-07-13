@@ -463,6 +463,7 @@ h2.subtitle {
 	color: #046ffe;
 	display: inline;
 }
+
 @media only screen and (min-width: 800px) {
 	.section-skills {
 		margin: 5rem 0;
