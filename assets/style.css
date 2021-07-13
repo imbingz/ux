@@ -185,6 +185,7 @@ small {
 
 /* About section - titles  */
 .section-about {
+	max-width: 100vw;
 	padding: 10% 0;
 	display: flex;
 	flex-direction: column-reverse;
@@ -255,21 +256,16 @@ h2.subtitle {
 
 .section-about .nav-social-icons {
 	display: none;
-	height: 80vh;
-	right: 3rem;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .section-about .nav-social-icons a {
-	padding: 0.5rem;
-	font-size: 20px;
-	background: #f1efef;
 	display: block;
+	background: #f1efef;
 	width: 180px;
 	border-radius: 50px;
-	margin-bottom: 0.5rem;
-	margin-right: -20rem;
+	font-size: 20px;
+	padding: 0.5rem;
+	margin: 0.5rem;
 	transition: transform 1s;
 }
 
@@ -292,6 +288,9 @@ h2.subtitle {
 }
 .nav-social-icons .nav-icon.fa-envelope {
 	color: #0099ff;
+}
+
+@media (min-width: 1280px) {
 }
 
 @media (min-width: 800px) {
@@ -327,7 +326,12 @@ h2.subtitle {
 	}
 	.section-about .nav-social-icons {
 		display: flex;
-		position: absolute;
+		position: fixed;
+		height: 80vh;
+		right: 3rem;
+		flex-direction: column;
+		justify-content: center;
+		transform: translate(190px, 0);
 	}
 }
 
