@@ -461,6 +461,7 @@ h2.subtitle {
 }
 .section-skills p a {
 	color: #046ffe;
+	display: inline;
 }
 @media only screen and (min-width: 800px) {
 	.section-skills {
