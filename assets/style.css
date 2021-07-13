@@ -179,14 +179,14 @@ small {
 h1.title {
 	font-family: 'Abel', sans-serif;
 	font-size: 1.75rem;
-	letter-spacing: .1rem;
+	letter-spacing: .03rem;
 	color: #777777;
 }
 
 h2.subtitle {
 	font-family: 'Abel', sans-serif;
 	font-size: 1.25rem;
-	letter-spacing: .07rem;
+	letter-spacing: .01rem;
 	color: #999999;
 }
 
@@ -203,7 +203,7 @@ h2.subtitle {
 	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 	border-radius: 50px;
 	height: 100px;
-	width: 350px;
+	width: 365px;
 	line-height: 2rem;
 	padding-left: 1.75rem;
 	margin-top: 2rem;
