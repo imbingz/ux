@@ -325,7 +325,6 @@ h2.subtitle {
 	background-image: url("./images/bg-01.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-position: center;
 	padding: 4rem 1.75rem 2rem;
 	margin-bottom: 10%;
@@ -339,6 +338,11 @@ h2.subtitle {
 }
 .section-intro div p:nth-child(2) {
 	margin: 0.75rem 0;
+}
+@media (min-width: 800px) {
+	.section-intro {
+		background-attachment: fixed;
+	}
 }
 
 /* section-projects */
