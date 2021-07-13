@@ -461,7 +461,7 @@ h2.subtitle {
 }
 
 .section-skills p {
-	width: 100%;
+	width: 100vw;
 	text-align: center;
 	color: #777;
 }
