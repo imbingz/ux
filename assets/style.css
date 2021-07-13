@@ -30,7 +30,7 @@ body {
 	height: 100%;
 	max-width: 1600px;
 	font-family: 'Noto Sans SC', 'PT Sans', 'Source Sans Pro', 'Open Sans', 'Fira Sans', sans-serif;
-	color: #333;
+	color: #111;
 	font-size: 16px;
 }
 
@@ -52,7 +52,7 @@ a {
 	display: inline-block;
 	padding: 0.5rem 1.2rem;
 	border-radius: 0.2rem;
-	font-size: 90%;
+	/* font-size: 90%; */
 }
 
 small {
@@ -95,7 +95,7 @@ small {
 	padding: .8rem 1.2rem;
 	/* add some extra padding */
 	display: inline-block;
-	transition: 0.3s;
+	transition: all 0.3s;
 }
 
 .nav-links li a:hover {
@@ -104,34 +104,8 @@ small {
 	border-radius: 50px;
 }
 
-.nav-social-icons {
-	display: flex;
-	justify-content: center;
-}
-
-.nav-links li a.fa {
-	padding: 0.5rem;
-	font-size: 20px;
-}
-
-.nav-social-icons .nav-icon.fa-linkedin {
-	color: #0a66c2;
-}
-.nav-social-icons .nav-icon.fa-github {
-	color: #6e5494;
-}
-.nav-social-icons .nav-icon.fa-instagram {
-	color: transparent;
-	background-image: linear-gradient(45deg, #ffdf9e, #e56969, #8a49a1);
-	-webkit-background-clip: text;
-	font-weight: 600;
-}
-.nav-social-icons .nav-icon.fa-envelope {
-	color: #0099ff;
-}
-
-.nav-social-icons .nav-icon:hover {
-	transform: scale(1.3);
+#resume {
+	color: #de0003;
 }
 
 /* hanburger menu bars */
@@ -140,7 +114,6 @@ small {
 	top: 1.5rem;
 	right: 1.5rem;
 	display: none;
-	/* display: flex; */
 	flex-direction: column;
 	justify-content: space-between;
 	width: 30px;
@@ -197,7 +170,6 @@ small {
 
 /* About section - titles  */
 .section-about {
-	/* height: 80vh; */
 	padding: 10% 0;
 	display: flex;
 	flex-direction: column-reverse;
@@ -265,6 +237,48 @@ h2.subtitle {
 	transform: scale(0.9);
 }
 
+.nav-social-icons {
+	/* display: none; */
+	height: 80vh;
+	position: absolute;
+	right: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.nav-social-icons a {
+	padding: 0.5rem;
+	font-size: 20px;
+	background: #f1efef;
+	display: block;
+	width: 180px;
+	border-radius: 50px;
+	margin-bottom: 0.5rem;
+	margin-right: -20rem;
+	transition: transform 1s;
+}
+
+.nav-social-icons a:hover {
+	transform: translate(-120px, 0);
+}
+.nav-social-icons a span {
+	color: #777;
+	padding-left: 2.3rem;
+}
+.nav-social-icons .nav-icon.fa-linkedin {
+	color: #0a66c2;
+}
+.nav-social-icons .nav-icon.fa-github {
+	color: #6e5494;
+}
+.nav-social-icons .nav-icon.fa-instagram {
+	color: #e4405f;
+}
+.nav-social-icons .nav-icon.fa-envelope {
+	color: #0099ff;
+}
+
 @media (min-width: 800px) {
 	.section-about {
 		height: 80vh;
@@ -295,6 +309,9 @@ h2.subtitle {
 		line-height: 2rem;
 		padding-left: 1.75rem;
 		margin-top: 2rem;
+	}
+	.nav-social-icons {
+		display: display;
 	}
 }
 
@@ -353,7 +370,9 @@ h2.subtitle {
 	letter-spacing: 0.05rem;
 }
 .project-card-text {
+	width: 310px;
 	margin: 0.3rem 1.5rem 0;
+	word-wrap: break-word;
 }
 .project-card-btn {
 	margin: 1.5rem 1rem 2.5rem;
@@ -426,10 +445,6 @@ h2.subtitle {
 	margin-bottom: 0.5rem;
 	color: #046ffe;
 }
-/* 
-.skill-wrapper h6 span {
-	color: #de0003;
-} */
 
 .skill-wrapper img {
 	width: 32px;
@@ -441,6 +456,12 @@ h2.subtitle {
 	list-style-type: disc;
 }
 
+.section-skills p {
+	color: #777;
+}
+.section-skills p a {
+	color: #046ffe;
+}
 @media only screen and (min-width: 800px) {
 	.section-skills {
 		margin: 5rem 0;
@@ -534,7 +555,7 @@ h2.subtitle {
 	display: inline-block;
 	position: fixed;
 	bottom: 2rem;
-	left: 45%;
+	right: 3rem;
 	text-align: center;
 	font-size: small;
 }
